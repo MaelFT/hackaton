@@ -1,0 +1,372 @@
+/* IMPORTATION DES _SCSS*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import "../lib/bootstrap-5.1.3-dist/css/bootstrap.css";
+* {
+  list-style-type: none;
+  margin: 0;
+  border: 0;
+}
+
+/*BASE*/
+*, body {
+  margin: 0;
+  padding: 0 1rem;
+  font-family: "Lato Regular";
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  padding-top: 5rem;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+p {
+  color: black;
+  font-size: 1.3rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* CUSTOMISATION HEADER */
+/*CUSTOMISATION BOUTON*/
+.btn {
+  background-color: white;
+  color: black;
+  padding: 0.5rem 2rem;
+  border: 1px solid black;
+  border-radius: 3px;
+  transition: 0.25s ease;
+  margin: 1rem auto;
+}
+
+/*CUSTOMISATION FOOTER*/
+footer {
+  background-color: grey;
+}
+footer .inh {
+  background-color: inherit;
+}
+footer .ul1 {
+  list-style: none;
+  padding-top: 15rem;
+}
+footer .ul1 li {
+  margin-top: 0.5rem;
+}
+footer .ul1 li a {
+  color: #fff;
+  transition: 0, 0.5s;
+}
+footer .ul1 li a:hover {
+  text-decoration: none;
+  color: #742663;
+}
+footer .ul1 li ul.social-icons {
+  margin-top: 10px;
+}
+footer .ul1 li .social-icons li {
+  vertical-align: top;
+  display: inline;
+  height: 100px;
+}
+footer .ul1 li .pictos {
+  object-fit: cover;
+  margin: 0 auto;
+  display: block;
+}
+footer .ul1 li .pictos ul.social-icons {
+  margin-top: 2rem;
+}
+footer .ul1 li .pictos ul.social-icons .social-icons {
+  color: #fff;
+  margin-top: 10px;
+}
+footer .ul1 li .pictos ul.social-icons .social-icons .social-icons li {
+  vertical-align: top;
+  display: inline;
+}
+footer .ul1 li .pictos ul.social-icons .social-icons .social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .ul1 li .pictos ul.social-icons .social-icons .social-icons a .fa-facebook, footer .ul1 li .pictos ul.social-icons .social-icons .social-icons a .fa-twitter, footer .ul1 li .pictos ul.social-icons .social-icons .social-icons a .fa-instagram, footer .ul1 li .pictos ul.social-icons .social-icons .social-icons a .fa-youtube {
+  padding: 0.1rem;
+  transition: 0.5s;
+}
+footer .ul1 li .pictos ul.social-icons .social-icons .social-icons a .fa-facebook:hover, footer .ul1 li .pictos ul.social-icons .social-icons .social-icons a .fa-twitter:hover, footer .ul1 li .pictos ul.social-icons .social-icons .social-icons a .fa-instagram:hover, footer .ul1 li .pictos ul.social-icons .social-icons .social-icons a .fa-youtube:hover {
+  text-decoration: none;
+  background-color: #742663;
+}
+footer .social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .bas a {
+  color: black;
+}
+
+/*CUSTOMISATION TITRE*/
+/*CUSTOMISATION CARROUSSEL*/
+#carousel .multi-item-carousel .carousel-inner > .item {
+  transition: 500ms ease-in-out left;
+}
+#carousel .multi-item-carousel .carousel-inner .active.left {
+  left: -33.33%;
+}
+#carousel .multi-item-carousel .carousel-inner .active.right {
+  left: 33.33%;
+}
+#carousel .multi-item-carousel .carousel-inner .next {
+  left: 33.33%;
+  border-radius: 10%;
+}
+#carousel .multi-item-carousel .carousel-inner .prev {
+  left: -33.33%;
+  border-radius: 10%;
+}
+@media (max-width: 1024px) and (transform-3d), (-webkit-transform-3d) {
+  #carousel .multi-item-carousel .carousel-inner > .item {
+    transition: 500ms ease-in-out left;
+    transition: 500ms ease-in-out all;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: none !important;
+    transform: none !important;
+  }
+}
+#carousel .multi-item-carousel .carousel-control.left,
+#carousel .multi-item-carousel .carousel-control.right {
+  background-image: none;
+}
+#carousel h3 {
+  padding: 10rem 0.5rem;
+  margin: 0;
+  background-color: inherit;
+}
+#carousel button {
+  text-transform: uppercase;
+  color: #000000;
+  background-color: white;
+  padding: 1rem 5rem;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+#carousel .inh {
+  background-color: inherit;
+}
+#carousel .inner-item-section {
+  padding: 10px;
+  width: 33%;
+  float: left;
+  border-radius: 10%;
+}
+#carousel .inner-item-section a {
+  height: 60vh;
+  width: 100%;
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  border-radius: 10%;
+}
+#carousel .inner-item-section a img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 1024px) {
+  #carousel .inner-item-section {
+    width: 33%;
+    border-radius: 10%;
+    padding: 10px;
+    float: left;
+  }
+}
+@media (max-width: 768px) {
+  #carousel .inner-item-section {
+    width: 50%;
+    border-radius: 10%;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10%;
+  }
+}
+@media (max-width: 450px) {
+  #carousel .inner-item-section {
+    width: 100%;
+    border-radius: 10%;
+    padding: 10px;
+  }
+}
+#carousel .fleche {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  background-color: white;
+  padding: auto;
+}
+
+/*CUSTOMISATION physicCard*/
+#physicCard {
+  width: 100%;
+}
+#physicCard .textGche {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10%;
+  background-color: white;
+}
+#physicCard .textGche .inh {
+  background-color: inherit;
+  border-radius: 10%;
+}
+#physicCard .card {
+  border: 1px solid black;
+  border-radius: 10%;
+  background-color: black;
+  object-fit: cover;
+  width: 50%;
+}
+#physicCard .card .innerCard {
+  border: 1px solid black;
+  border-radius: 10%;
+  object-fit: cover;
+  overflow: hidden;
+}
+#physicCard .card .innerCard divInnerCard {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 10%;
+  object-fit: cover;
+}
+#physicCard .card .innerCard divInnerCard iframe {
+  border: 1px solid black;
+  border-radius: 10%;
+  width: 100%;
+  height: 100%;
+}
+
+input:required {
+  border: 1px solid orange;
+}
+
+.chartContent {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+section .eventsContainer {
+  border: 1px black solid;
+  padding: 30px;
+  width: 30%;
+  margin-left: 30px;
+  background: rgba(255, 255, 255, 0.5);
+}
+section .eventsTitle {
+  padding-bottom: 10px;
+}
+section .titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+section .eventImage {
+  background: url(./Beaurdeaux.jpg) center/cover;
+  height: 50vh;
+  width: 50%;
+  transform: translateX(50%);
+  margin-bottom: 30px;
+}
+section .eventArea {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+  border: 1px black solid;
+  resize: none;
+}
+section .eventButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 120px;
+}
+section .eventButton button {
+  padding: 15px;
+  border: 1px black solid;
+  background: white;
+  width: 15%;
+}
+section .eventImageTwo {
+  background: url(./pont.jpg) center/cover;
+  height: 50vh;
+  width: 50%;
+  transform: translateX(50%);
+  margin-bottom: 30px;
+}
+
+section h2 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+section .gridPrice {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+}
+section .gridPrice .gridElement {
+  border: 1px black solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 20px;
+}
+section .gridPrice .gridElement h4 {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+section .gridPrice .gridElement h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.6rem;
+}
+section .gridPrice .gridElement p {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+/*# sourceMappingURL=style.css.map */
