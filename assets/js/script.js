@@ -1,7 +1,5 @@
 // Instancier le carroussel
-$('.multi-item-carousel').carousel({
-  interval: 3000
-});
+$('.multi-item-carousel').carousel();
 
 // pour chaque diapositive du carrousel, copiez l'élément de la diapositive suivante dans la diapositive.
 // Faites de même pour l'élément suivant.
