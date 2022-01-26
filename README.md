@@ -12,7 +12,7 @@ Trois thématiques (3  salles) sont déjà proposées : "Le château ambulant", 
 ## Sujet
 
 Il vous est demandé de réaliser un site web vitrine pour lequel vous créerez et intégrerez des maquettes graphiques(techno libre, CMS exclu !).
-Vous devrez réaliser un benchmark de la concurrence et proposer une orientation graphique (logo + charte, habillage et icônographie). La dernière salle, dont vous déterminerez  l’univers, doit être l’objet de la communication promotionnelle dontvous avez la responsabilité.
+Vous devrez réaliser un benchmark de la concurrence et proposer une orientation graphique (logo + charte, habillage et icônographie). La dernière salle, dont vous déterminerez  l’univers, doit être l’objet de la communication promotionnelle dont vous avez la responsabilité.
 
 ## Team 5
 
