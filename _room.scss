@@ -1,0 +1,62 @@
+.roomBody {
+  background: $black;
+
+  section {
+    h2 {
+      color: $white;
+      font-size: 2rem;
+      margin-top: 100px;
+    }
+  }
+
+  .roomHeader {
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: url(../img/room/HEADER-CHAMBRE.png) center/cover;
+
+    .bgHeader {
+      width: 50%;
+
+      .intro {
+        margin-left: 30px;
+        h1 {
+          color: $grey;
+          font-weight: 300;
+          margin-bottom: 20px;
+        }
+        p {
+          color: $grey;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+  .carrousel {
+    height: 500px;
+  }
+
+  .info {
+    div {
+      &:first-child {
+        margin: 50px;
+        background: $white;
+        height: 500px;
+        width: 90%;
+        border-radius: 10px;
+      }
+      &:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    input[type="button"] {
+      background: $white;
+      padding: 20px 50px;
+      border-radius: 10px;
+    }
+  }
+}
