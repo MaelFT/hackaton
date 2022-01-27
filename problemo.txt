@@ -1,0 +1,36 @@
+Nav: scroll up trop lent faire apparaitre (GOOD)
+Home: Phrase H1 
+Buton: Effet hover et click
+Footer: Réduire le logo
+Home: Mettre de l'espace entre les flèches du carousel
+Avis: Rajouter les petits ronds de navigation
+Home: Plus d'espace entre le avis et la carte
+Global: Mettre les H2 en blanc
+Global: Style dans le texte
+Room: Réduire la taille des textes
+Room: Manque d'espace entre le dernier jeu et le footer
+Concept: Manque d'espace entre la dernière image et le bouton
+Menu Burger: Rajouter le link de navigation
+Event: Rajouter du style sur les textes
+Contact: photo rejoins nous, revoir le design
+FAQ: Enlever le cursor
+FAQ: Revoir les questions (problèmes css avec bootstrap)
+Global: Revoir le margin entre les elements
+FAQ: Manque d'espace entre la map et les questions
+Reservation: Rajouter le jour d'après
+Global: Laisser le Logo avec le menu burger
+Carousel: le carousel ne garde pas le design responsive
+Home: le tarif est pas centrer en responsive
+Global: Rajouter le petit bouton pour monter
+Contact: Rajouter l'image pour postuler
+Room: flèche marche pas carousel lettre trop grande responsive
+FAQ: Responsive textcontent
+Reservation: Mettre le nombre participants en noir
+
+Global: Ajouter les hovers
+
+Carousel: Problème d'animation
+
+
+
+
