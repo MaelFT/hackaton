@@ -26,23 +26,23 @@
     <main>
         <!-- FORMULAIRE -->
         <section class="">
-            <h1 class="text-center text-white">CONTACTER</h1>
+            <h1 class="text-center text-white">NOUS CONTACTER</h1>
             <div id="contact" class="d-flex justify-content-center text-white my-4 mx-4 py-4">
                 <form class="marg">
                     <p class="text-center">
-                        <input id="name" class="bg-white text-dark mx-4 form-control input-lg" type="text"
+                        <input id="name" class="bg-white text-dark mx-4-lg form-control input-lg" type="text"
                             placeholder="NOM * " required>
                     </p>
                     <p class="text-center">
-                        <input id="firstname" class="bg-white mx-4 text-dark form-control input-lg" type="text"
+                        <input id="firstname" class="bg-white mx-4-lg text-dark form-control input-lg" type="text"
                             placeholder="PRENOM * " required>
                     </p>
                     <p class="text-center">
-                        <input id="email" class="bg-white mx-4 text-dark form-control input-lg" type="email"
+                        <input id="email" class="bg-white mx-4-lg text-dark form-control input-lg" type="email"
                             placeholder="EMAIL * " required>
                     </p>
                     <p class="text-center">
-                        <input type="tel" id="tel" class="bg-white mx-4 text-dark form-control input-lg" name="tel"
+                        <input type="tel" id="tel" class="bg-white mx-4-lg text-dark form-control input-lg" name="tel"
                             pattern="[0-9]{10}" placeholder="TELEPHONE * " maxlength="10" required>
                         <small>Format:0666666666</small>
                     </p>
@@ -51,13 +51,13 @@
                         <input type="text" class="bg-white text-dark py-3" name="zip_code" id="zip_code">
                         <button type="button" class="bg-white text-dark" onclick="loadDoc()">Chercher</button>
 
-                        <label for="ville" class="mx-4">VILLE</label>
-                        <select name="city" class="bg-white mx-4 text-dark py-3" id="city">
+                        <label for="ville" class="mx-4-lg">VILLE</label>
+                        <select name="city" class="bg-white mx-4-lg text-dark py-3" id="city">
                         </select>
 
                     </p>
                     <p class="text-center">
-                        <select name="Subject" class="bg-white mx-4 text-dark form-control mr-3" id="FFSelectOption"
+                        <select name="Subject" class="bg-white mx-4-lg text-dark form-control mr-3" id="FFSelectOption"
                             placeholder="SUJET * :" required>SUJET * :
                             <option class="text-white" value="">SUJET * :</option>
                             <optgroup class="text-white" label="Donner une note de 10/20 à 20/20">
@@ -83,7 +83,7 @@
                         </select>
                     </p>
                     <p class="text-center">
-                        <textarea class="text-black mx-4 ps-1" name="comment" id="" cols="168" rows="10"
+                        <textarea class="text-black mx-4-lg ps-1" name="comment" id="" cols="168" rows="10"
                             style="overflow: hidden;" placeholder="VOTRE MESSAGE * " required></textarea>
                     </p>
                 </form>
@@ -108,25 +108,26 @@
         </section>
 
         <!-- SECTION CARTE PHYSIQUE -->
-        <section>
+        <section id="carte">
             <div id="physicCard1" class="py-4">
                 <div class="container mb-4">
                     <div class="row d-flex justify-content-evenly">
                         <div class="col-md-5 col-lg-5 col-12 textGche">
                             <div class="justify-content-start d-flex inh">
                                 <ul class="inh">
-                                    <li class="fs-2 my-4 inh"><i class="fa fa-map-marker inh"></i><strong class="inh">
-                                            Room 5 Escape Game
-                                            Bordeaux</strong>
+                                    <p class="inh fs-1 text-center bg-white"><strong class="bg-white">
+                                        Room 5 Escape Game
+                                        Bordeaux</strong></p>
+                                    <li class="fs-2 my-4 inh"><i class="fa fa-map-marker inh"></i>
                                         <p class="fs-2 inh">72 Quai des Marques, 33300 BORDEAUX</p>
                                     </li>
-                                    <li class="fs-2 my-4 inh"><i class="fa fa-car inh"></i><strong class="inh">En
+                                    <li class="fs-2 my-4 inh"><i class="fa fa-car inh"></i><strong class="inh">  En
                                             Voiture:</strong>
                                         <p class="fs-2 inh">Sortie rocade N°4 direction "Bordeaux Centre"
                                             (zone de Bordeaux Lac : En face Cap Sciences)
                                         </p>
                                     </li>
-                                    <li class="fs-2 my-4 inh"><i class="fa fa-subway inh"></i><strong class="inh">En
+                                    <li class="fs-2 my-4 inh"><i class="fa fa-subway inh"></i><strong class="inh">  En
                                             transport en
                                             commun:</strong>
                                         <p class="fs-2 inh">Tram B arrêt La cité du Vin puis 2 minutes de marche,
@@ -154,6 +155,14 @@
             </div>
         </section>
 
+        <!-- SECTION BOUTON RETOUR HAUT DE PAGE -->
+        <section id="return">
+            <div class="fleche text-center py-4">
+                <a class="" href="contact.html" data-slide="up"><i class="bi bi-arrow-up-circle text-white"
+                    style="font-size:60px;"></i></a>
+              </div>
+        </section>
+
     </main>
 
     <!-- FOOTER -->
@@ -161,12 +170,12 @@
         <nav class='nav bg-secondary'>
             <div class="container bg-secondary">
                 <div class="row d-flex justify-content-around bg-secondary">
-                    <div class="col-md-6 col-lg-6 col-12 py-4 bg-secondary">
+                    <div class="col-md-6 col-lg-6 col-6 py-4 bg-secondary">
                         <div class="justify-content-start d-flex mb-4 bg-secondary">
                             <img class="bg-secondary" src="assets/img/LOGO (2).png" alt="logo">
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-12 py-4 text-center bg-secondary">
+                    <div class="col-md-6 col-lg-6 col-6 py-4 text-center bg-secondary">
                         <div class="justify-content-center d-flex bg-secondary">
                             <ul class="ul1 bg-secondary">
                                 <li class="fs-1 py-1 text-center bg-secondary"><a href="index.html">FAQ</a></li>
