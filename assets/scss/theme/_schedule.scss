@@ -1,12 +1,17 @@
 .scheduleBody {
   background: $black;
   .scheduleHeader {
-    margin-top: 300px;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     h2 {
       color: $white;
       font-weight: 300;
     }
     .nextDay {
+      // Positionnement
       width: 80%;
       margin: 80px auto 50px;
       display: flex;
@@ -22,6 +27,7 @@
       }
 
       input[type="button"] {
+        // Paramètre du bouton d'accès au prochain jour
         color: $white;
         background: $pink;
         border-radius: 10px;
@@ -38,6 +44,7 @@
       }
 
       section {
+        // Paramètre des boutons responsive
         display: none;
         background: $pink;
         padding: 5px;
@@ -48,6 +55,7 @@
   }
 
   .schedule {
+    // Positionnement
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -67,6 +75,7 @@
         display: none;
       }
       input[type="button"] {
+        // Paramètre du bouton de réservation
         width: 150px;
         color: $black;
         background: $white;
@@ -82,6 +91,7 @@
   }
 
   .question {
+    // Positionnement
     margin-top: 100px;
     display: flex;
     flex-direction: column;
@@ -93,6 +103,7 @@
     }
 
     input[type="button"] {
+      // Paramètre du bouton de contact
       color: $black;
       background: $white;
       border-radius: 10px;
@@ -101,6 +112,8 @@
     }
   }
 }
+
+// RESPONSIVE
 
 @media (max-width: 800px) {
   .scheduleBody {

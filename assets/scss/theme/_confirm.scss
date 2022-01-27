@@ -1,0 +1,151 @@
+#confirmBody {
+  background: $black;
+
+  #confirmParam {
+    h2 {
+      color: $white;
+      font-size: 2rem;
+      font-weight: 300;
+      margin: 150px 0 0;
+      text-align: center;
+    }
+    .confirmSett {
+      // Positionnement
+      display: grid;
+      grid-template-columns: 80% 20%;
+      width: 90%;
+      margin: 0 auto;
+
+      .confirmOption {
+        // Positionnement
+        display: grid;
+        grid-template-columns: 60% 40%;
+        border: 1px solid $grey;
+        border-radius: 50px;
+        padding: 30px;
+        margin: 100px;
+
+        p {
+          color: $grey;
+        }
+
+        #img {
+          width: 100%;
+          border-radius: 80px;
+        }
+
+        .confirmSettings {
+          // Positionnement
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: 25% 25% 25% 25%;
+          align-items: center;
+          width: 100%;
+
+          #theme {
+            color: $white;
+          }
+        }
+      }
+      .confirmTotal {
+        color: $white;
+        margin-top: 150px;
+
+        h3 {
+          border-bottom: 1px solid $grey;
+          font-size: 1.6rem;
+          font-weight: 300;
+          padding-left: 5px;
+        }
+
+        .priceTotal {
+          // Positionnement
+          display: flex;
+          justify-content: space-between;
+          margin: 20px 5px;
+        }
+
+        #payment {
+          // Paramètres du bouton de paiement
+          border-radius: 10px;
+          padding: 15px 70px;
+          background: $black;
+          color: $white;
+          border: 1px solid $white;
+          margin: 30px 20%;
+        }
+      }
+    }
+  }
+}
+
+// RESPONSIVE
+
+@media (max-width: 1400px) {
+  #confirmBody {
+    #confirmParam {
+      .confirmSett {
+        .confirmTotal {
+          #payment {
+            margin: 30px 10%;
+            background: $white;
+            color: $black;
+            width: 80%;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  #confirmBody {
+    #confirmParam {
+      .confirmSett {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .confirmOption {
+          margin: 30px;
+          #img {
+            border-radius: 30px;
+          }
+        }
+        .confirmTotal {
+          margin: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  #confirmBody {
+    #confirmParam {
+      .confirmSett {
+        .confirmOption {
+          .confirmSettings {
+            p {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  #confirmBody {
+    #confirmParam {
+      .confirmSett {
+        .confirmTotal {
+          #payment {
+            margin: 30px 10%;
+          }
+        }
+      }
+    }
+  }
+}

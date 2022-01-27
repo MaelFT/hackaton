@@ -1,0 +1,60 @@
+.homeBody {
+  background: $black;
+  .avis {
+    .avisEnter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      //Style des éléments
+
+      h2 {
+        padding-bottom: 30px;
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: $white;
+        font-family: $font1, sans-serif;
+      }
+
+      h3 {
+        padding-top: 20px;
+        padding-bottom: 30px;
+        color: $grey;
+        font-family: $font1, sans-serif;
+      }
+
+      p {
+        padding-bottom: 10px;
+        font-family: $font1, sans-serif;
+        width: 50%;
+        color: $grey;
+      }
+    }
+  }
+  .video {
+    text-align: center;
+    margin: 0 0 50px;
+  }
+  .eventButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+
+    .eButton {
+      padding: 15px 50px;
+      border: 1px black solid;
+      background: white;
+      //   width: 30%;
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-family: $font1, sans-serif;
+
+      @media screen and (max-width: 400px) {
+        padding: 25px;
+      }
+    }
+  }
+}

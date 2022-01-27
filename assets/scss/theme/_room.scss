@@ -3,9 +3,16 @@
 
   section {
     h2 {
-      color: $white;
-      font-size: 2rem;
+      color: white;
+      font-size: 4rem;
       margin-top: 100px;
+      padding-bottom: 2rem;
+      text-align: center;
+    }
+    img {
+      margin: auto;
+      border: 1px solid black;
+      border-radius: 10%;
     }
   }
 
@@ -22,41 +29,62 @@
       .intro {
         margin-left: 30px;
         h1 {
-          color: $grey;
+          color: grey;
           font-weight: 300;
           margin-bottom: 20px;
         }
         p {
-          color: $grey;
-          line-height: 30px;
+          color: grey;
         }
       }
     }
   }
 
-  .carrousel {
-    height: 500px;
-  }
-
   .info {
     div {
+      h4 {
+        font-size: 3rem;
+        padding-bottom: 3rem;
+      }
+      p {
+        font-size: 3rem;
+        padding-bottom: 3rem;
+      }
+      p:nth-child(3) {
+        font-weight: 900;
+      }
       &:first-child {
-        margin: 50px;
-        background: $white;
-        height: 500px;
-        width: 90%;
+        background: black;
+        color: grey;
         border-radius: 10px;
+        margin: 2rem 10rem;
       }
       &:nth-child(2) {
+        background: black;
+        color: white;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 2rem auto;
       }
     }
     input[type="button"] {
-      background: $white;
+      color: black;
+      background: white;
+      margin: 2rem auto;
       padding: 20px 50px;
       border-radius: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 451px) {
+  *,
+  body {
+    padding: 0rem;
+
+    .roomBody .info div:first-child {
+      margin: 2rem 0rem;
     }
   }
 }

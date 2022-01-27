@@ -1,35 +1,331 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <header>
-      <!--Création de la navbar avec li pour le référencement-->
-      <div class="navBar" id="nav">
-        <div class="elements">
-          <ul>
-            <div class="navAll">
-              <div class="navLogo">
-                <img src="./assets/img/LOGO.png" alt="Logo The Room 5" />
-              </div>
-              <div class="navList">
-                <li><a href="">Concept</a></li>
-                <li><a href="./room.html">Chambres</a></li>
-                <li><a href="">Evenements</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="./faq.html">Faq</a></li>
-                <li><button class="reservBtn">Reservation</button></li>
-              </div>
-            </div>
-          </ul>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE ROOM 5 - ESCAPE GAME BORDEAUX</title>
+  <meta name="description"
+    content="ROOM 5 est un escape game, basé à Bordeaux, dans la Gironde, en France. Apparu en 2022, le quintet est composé de Valentina BURGOS BRAVO (cheffe de projet), Diane MAXIMOVITCH (design), Julien POIRIER (développement), Maël FATH (développement) et Etienne RIVET (développement).">
+  <meta property="og:url" content="https://theroom5.fr?ref=https://www.google.com/">
+  <meta property="og:image" content="">
+  <link
+  rel="shortcut icon"
+  href="./assets/img/favicon.png"
+  type="image/x-icon"
+  />
+  <link rel="stylesheet" href="assets/lib/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+</head>
+
+<body class="homeBody">
+  <!-- HEADER -->
+  <header>
+    <!--Création de la navbar avec li pour le référencement-->
+    <nav class="navBar" id="nav">
+      <div class="elements">
+        <ul>
+          <div class="navAll">
+          <div class="navLogo">
+          <a href="./index.html">
+            <img src="./assets/img/log.png" alt="LOGO THE ROOM 5">
+          </a>
+      </div>
+      <div class="navList">
+         <li><a href="./concept.html">Concept</a></li>
+         <li><a href="./room.html">Chambres</a></li>
+         <li><a href="./events.html">Evenements</a></li>
+         <li><a href="./contact.html">Contact</a></li>
+         <li><a href="./faq.html">Faq</a></li>
+         <li><a href="./schedule.html"><button class="reservBtn">Reserver</button></a></li>
+      </div>
+    </div>
+      </ul>
+      </div>
+    </nav>
+  </section>
+  <!--Ajout des éléments pour le menu burger-->
+
+
+  <!--Bouton clicable en haut de l'écran-->
+
+
+  <div id="sideBar">
+    <div class="toggleBtn" id="btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+   <!--Eléments qui s'ajoutent lors du clic-->
+    
+    <div id="toggleBar">
+      <div class="outBtn">
+        <span></span>
+        <span></span>
+      </div>
+    <!--Eléments du menu-->  
+    <ul>
+      <li><img src="./assets/img/LOGO.png" alt="LOGO THE ROOM 5"></li>
+      <li><a href="">Concept</a></li>
+      <li><a href="">Chambres</a></li>
+      <li><a href="">Evenements</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="">Faq</a></li>
+      <li><button class="liBtn">+ informations</button></li>
+  </div>
+</ul>
+</header>
+  <!-- MAIN -->
+  <main>
+    <section class="header">
+      <!--Ajout de la div pour accueillir l'image et du bouton-->
+      <div class="topImg">
+        <h2>Vivez une nouvelle expérience</h2>
+        <div class="topBtn">
+          <button class="tBtn">+ informations</button>
         </div>
       </div>
-    </header>
-    <script src="./assets/js/navbar.js"></script>
-  </body>
+    </section>
+    <section class="youtube">
+      <div class="video">
+        <p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Emo-kbmYlT0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </p>
+      </div>
+    </section>
+    <!-- CARROUSSEL -->
+    <div class="container mx-auto" id="carousel">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="carousel slide multi-item-carousel" id="theCarousel">
+            <div class="carousel-inner">
+              <div class="item active">
+                <div class="inner-item-section">
+                  <a href="#1" class="">
+                    <img src="assets/img/CHATEAU-AMBULANT.png" alt="le chateau ambulant" class="img-responsive">
+                    <div class="carousel-caption inh">
+                      <h3>LE CHÂTEAU AMBULANT</h3>
+                      <button type="submit">Réserver</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="inner-item-section">
+                  <a href="#1" class="">
+                    <img src="assets/img/GAMECHUCKY.png" alt="chucky" class="img-responsive">
+                    <div class="carousel-caption inh">
+                      <h3>CHUCKY HORROR</h3>
+                      <button type="submit">Réserver</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="inner-item-section">
+                  <a href="#1" class="">
+                    <img src="assets/img/BORDEAUX-SUBTERRANE.png" alt="les souterrains de Bordeaux"
+                      class="img-responsive">
+                    <div class="carousel-caption inh">
+                      <h3 class="text-center">LES SOUTERRAINS DE BORDEAUX</h3>
+                      <button type="submit">Réserver</button>
+                    </div>
+                  </a>
+
+                </div>
+              </div>
+              <div class="item">
+                <div class="inner-item-section">
+                  <a href="#1" class="">
+                    <img src="assets/img/HACKATON.png" alt="hackathon" class="img-responsive">
+                    <div class="carousel-caption inh">
+                      <h3>HACKATHON</h3>
+                      <button type="submit">Réserver</button>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fleche text-center py-4">
+      <a class="" href="#theCarousel" data-slide="prev"><i class="bi bi-arrow-left-circle text-white"
+          style="font-size:60px;"></i></a>
+      <a class="" href="#theCarousel" data-slide="next"><i class="bi bi-arrow-right-circle text-white"
+          style="font-size:60px;"></i></a>
+    </div>
+
+    <section> 
+      <!--Création des cases des tarifs-->
+        <h2 class="gridTitle">Tarifs</h2>
+        <div class="gridPrice">
+          <div class="gridElement">
+            <p class="nbJoueur">2 joueurs</p>
+            <p class="prix">39 &euro;</p>
+            <p class="person">Par personne</p>
+          </div>
+  
+          <div class="gridElement">
+            <p class="nbJoueur">3 joueurs</p>
+            <p class="prix">30 &euro;</p>
+            <p class="person">Par personne</p>
+          </div>
+  
+          <div class="gridElement">
+            <p class="nbJoueur">4 joueurs</p>
+            <p class="prix">25 &euro;</p>
+            <p class="person">Par personne</p>
+          </div>
+        
+          <div class="gridElement">
+            <p class="nbJoueur">5 joueurs</h4>
+            <p class="prix">22 &euro;</p>
+            <p class="person">Par personne</p>
+          </div>
+      </div>
+    </section>
+
+    <div class="eventButton">
+      <button class="eButton">Reserver</button>
+    </div>
+
+    <section class="avis">
+      <div class="avisEnter">
+        <h2>Totale immersion !</h2>
+        <h3>nov. 2022 • En famille</h3>
+
+        <p>
+          "Indispensable ! Super accueil par nos hôtes, lieu superbement décoré.
+          Puis immersion totale, décors exceptionnellement bien conçus et
+          surtout, immersion totale dans une aventure extrêmement bien imaginée
+          et menée. Un grand plaisir ! Nous recommandons plus que vivement, un
+          incontournable ! Écrit le 15 Janvier 2022"
+        </p>
+        <p>
+          Cet avis est l'opinion subjective d'un membre de Tripadvisor et non
+          l'avis de TripAdvisor LLC.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION carte physique -->
+    <div id="physicCard" class="py-4">
+      <div class="container mb-4">
+        <div class="row d-flex justify-content-evenly">
+          <div class="col-md-5 col-lg-5 col-12 textGche">
+            <div class="justify-content-start d-flex inh">
+              <ul class="inh">
+                <li class="fs-2 my-4 inh"><i class="fa fa-map-marker inh"></i><strong class="inh"> Room 5 Escape Game
+                    Bordeaux</strong>
+                  <p class="fs-2 inh">72 Quai des Marques, 33300 BORDEAUX</p>
+                </li>
+                <li class="fs-2 my-4 inh"><i class="fa fa-car inh"></i><strong class="inh">En Voiture:</strong>
+                  <p class="fs-2 inh">Sortie rocade N°4 direction "Bordeaux Centre"
+                    (zone de Bordeaux Lac : En face Cap Sciences)
+                  </p>
+                </li>
+                <li class="fs-2 my-4 inh"><i class="fa fa-subway inh"></i><strong class="inh">En transport en
+                    commun:</strong>
+                  <p class="fs-2 inh">Tram B arrêt La cité du Vin puis 2 minutes de marche,
+                    ou Tram C arrêt Grand Parc puis 25 minutes de marche
+                  </p>
+                </li>
+                <li class="fs-2 my-4 inh">
+                  <p class="fs-2 inh">Grand parking gratuit pour votre venue en voiture !</p>
+                </li>
+              </ul>
+
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-5 col-12 card">
+            <div class="justify-content-center d-flex innerCard">
+              <div class="justify-content-center d-flex divInnerCard">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1_4iMIRdwRH_nvqiNZ-Vtwn-XouRS8oG2&ehbc=2E312F"
+                  width="640" height="480"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BOUTON RETOUR haut de page -->
+    <section id="return">
+      <div class="fleche text-center py-4">
+        <a class="" href="index.html" data-slide="up"><i class="bi bi-arrow-up-circle text-white"
+            style="font-size:60px;"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-secondary">
+    <nav class='nav bg-secondary'>
+      <div class="container bg-secondary">
+        <div class="row d-flex justify-content-around bg-secondary">
+          <div class="col-md-6 col-lg-6 col-6 py-4 bg-secondary">
+            <div class="justify-content-start d-flex mb-4 bg-secondary">
+              <img class="bg-secondary" src="assets/img/LOGO (2).png" alt="logo">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-6 py-4 text-center bg-secondary">
+            <div class="justify-content-center d-flex bg-secondary">
+              <ul class="ul1 bg-secondary">
+                <li class="fs-1 py-1 text-center bg-secondary"><a href="index.html">FAQ</a></li>
+                <li class="fs-1 py-1 text-center bg-secondary"><a href="tarif.html">EVENEMENTS</a></li>
+                <li class="fs-1 pb-4 text-center bg-secondary"><a href="cgv.html">CGV-CGU</a></li>
+                <li class="fs-1 pt-4 text-center bg-secondary"><a href="contact.html">CONTACT</a></li>
+                <li class="fs-1 text-center bg-secondary">
+                  <div class="pictos bg-secondary">
+                    <ul class="social-icons bg-secondary">
+                      <li class="bg-secondary"><a href="" class="social-icon bg-secondary"><i
+                            class="fa fa-facebook fs-1 px-2 bg-secondary"></i></a></li>
+                      <li class="bg-secondary"><a href="" class="social-icon bg-secondary"><i
+                            class="fa fa-twitter fs-1 px-2 bg-secondary"></i></a></li>
+                      <li class="bg-secondary"><a href="" class="social-icon bg-secondary"><i
+                            class="fa fa-youtube fs-1 px-2 bg-secondary"></i></a></li>
+                      <li class="bg-secondary"><a href="" class="social-icon bg-secondary"><i
+                            class="fa fa-instagram fs-1 px-2 bg-secondary"></i></a></li>
+                      <li class="bg-secondary"><a href="" class="social-icon bg-secondary"><i
+                            class="fa fa-twitch fs-1 px-2 bg-secondary"></i></a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="bas text-center bg-secondary pb-2">
+            © 2022 <a href=""> Agence 5 - theroom5.fr Valentina BURGOS BRAVO - Diane MAXIMOVITCH - Maël FATH - Julien
+              POIRIER - Etienne RIVET</a> - <a href="">Mentions légales</a>
+          </div>
+    </nav>
+  </footer>
+  <!-- SCRIPT -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/index.js"></script>
+  <script src="./assets/js/navbar.js"></script>
+  <script
+    src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+  <script src="assets/lib/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+</body>
+
 </html>

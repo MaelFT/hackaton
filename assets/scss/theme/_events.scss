@@ -1,74 +1,133 @@
-section {
+.eventBody {
+  background: $black;
+  .navBar {
+    ul {
+      background: transparent;
+    }
+  }
+
+  .events {
+    background: #000;
+    overflow: hidden;
+
+    //Ajout de l'image du header
+
+    .eventsHeader {
+      background: url(../img/HEADEREVENEMENTS.png) center/cover;
+      height: 100vh;
+      width: 100%;
+    }
 
     //création de la boîte
     .eventsContainer {
-        border: 1px black solid;
-        padding: 30px;
-        width: 30%;
-        margin-left: 30px;
-        background: rgba(255,255,255,0.5);
+      padding-top: 200px;
+      margin-left: 30px;
+      color: rgb(255, 255, 255);
+      width: 50%;
+      font-family: $font1, sans-serif;
+
+      //Ajustement pour la version mobile
+
+      @media screen and (max-width: 600px) {
+        width: 90%;
+      }
     }
 
+    //Style du titre du header
+
     .eventsTitle {
-        padding-bottom: 10px;
+      padding-bottom: 10px;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-family: $font1;
+    }
+
+    .padBot {
+      padding-bottom: 10px;
     }
 
     //Alignement des items dans la boîte
     .titleContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        text-transform: uppercase;
-        font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      color: white;
+      font-family: $font1;
+      padding-bottom: 10px;
+      margin-top: 20px;
     }
 
-
+    .titleDate {
+      font-size: 1.2rem;
+      font-family: $font1;
+    }
 
     .eventImage {
-        background: url(./Beaurdeaux.jpg) center/cover;
+      background: url(../img/EVENEMENT-1.png) center/cover;
+      height: 70vh;
+      width: 70%;
+      margin: 0 auto 30px auto;
+      border-radius: 20px;
+
+      @media screen and (max-width: 600px) {
+        width: 80%;
         height: 50vh;
-        width: 50%;
-        transform: translateX(50%);
-        margin-bottom: 30px;
+      }
     }
 
-    //Reglage de la zone de texte
+    .eventsText {
+      color: $grey;
+      font-family: "Poppins", sans-serif;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      width: 70%;
 
-    .eventArea {
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 55%;
-        border: 1px black solid;
-        resize: none;
+      p {
+        padding-bottom: 15px;
+      }
     }
 
-//Réglage des boutons
+    //Réglage des boutons
 
     .eventButton {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 20px;
-        margin-bottom: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      margin-bottom: 120px;
 
-        button {
-            padding: 15px;
-            border: 1px black solid;
-            background: white;
-            width: 15%;
+      .eButton {
+        padding: 15px;
+        border: 1px black solid;
+        background: white;
+        width: 33%;
+        border-radius: 10px;
+
+        @media screen and (max-width: 400px) {
+          padding: 25px;
         }
+      }
     }
-    
-//Réglage de la deuxième image 
+
+    //Réglage de la deuxième image
 
     .eventImageTwo {
-        background: url(./pont.jpg) center/cover;
+      background: url(../img/EVENEMENT-2.png) center/cover;
+      height: 70vh;
+      width: 70%;
+      margin: 0 auto 30px auto;
+      border-radius: 20px;
+
+      @media screen and (max-width: 600px) {
+        width: 80%;
         height: 50vh;
-        width: 50%;
-        transform: translateX(50%);
-        margin-bottom: 30px;
+        border-radius: 30px;
+      }
     }
+  }
 }

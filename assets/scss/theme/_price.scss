@@ -1,39 +1,61 @@
 section {
-    h2 {
-        align-items: center;
-        justify-content: center;
-        display: flex;
+  // alignement du titre au dessus du grid
+  .gridTitle {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: $white;
+  }
+
+  //création du grid
+
+  .gridPrice {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+
+    //style du grid
+
+    .gridElement {
+      border-left: 1px black solid;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 50px 20px;
+      background: white;
+
+      //Style de la case de droite
+
+      &:first-child {
+        border-radius: 20px 0 0 20px;
+      }
+
+      //Style de la case de gauche
+
+      &:last-child {
+        border-radius: 0 20px 20px 0;
+        border-right: 1px solid $black;
+      }
+
+      //style du contenu des cases
+
+      .nbJoueur {
+        text-transform: uppercase;
+        font-weight: 100;
+      }
+
+      .prix {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 1.6rem;
+      }
+
+      .person {
+        text-transform: uppercase;
+        font-weight: 100;
+      }
     }
-
-    .gridPrice {
-        width: 70%;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        margin: 0 auto;
-
-        .gridElement {
-            border: 1px black solid;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            padding: 50px 20px;
-
-            h4 {
-                text-transform: uppercase;
-                font-weight: 100;
-            }
-
-            h3 {
-                padding-top: 10px;
-                padding-bottom: 10px;
-                font-size: 1.6rem;
-            }
-
-            p {
-                text-transform: uppercase;
-                font-weight: 100;
-            }
-        }
-    }
+  }
 }

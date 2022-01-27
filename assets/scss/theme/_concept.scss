@@ -1,0 +1,143 @@
+.conceptBody {
+  background: $black;
+  .navBar {
+    ul {
+      background: transparent;
+    }
+  }
+  .concept {
+    background: $black;
+    overflow: hidden;
+
+    .storyHeader {
+      background: url(../img/HEADER-NOSCONCEPT.png) center/cover;
+      height: 100vh;
+      width: 100%;
+
+      .storyContainer {
+        padding-top: 300px;
+        margin-left: 30px;
+        color: rgb(255, 255, 255);
+        width: 40%;
+        font-family: $font1;
+
+        h1 {
+          text-transform: uppercase;
+          padding-bottom: 30px;
+          font-size: 2rem;
+        }
+      }
+    }
+
+    //alignement du titre au dessus du grid
+    .storyTitle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+      margin-top: 50px;
+      text-transform: uppercase;
+      color: #b3b3b3;
+
+      h2 {
+        text-transform: uppercase;
+        padding-bottom: 30px;
+        font-size: 2rem;
+        font-family: $font1;
+
+        @media (max-width: 600px) {
+          margin-top: 50px !important;
+        }
+      }
+    }
+
+    //création du grid avec le texte et l'image
+
+    .gridStory {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding-bottom: 20px;
+
+      @media screen and (max-width: 600px) {
+        display: block;
+      }
+
+      .gridImage {
+        background: url(../img/HISTOIRE.png) center/cover;
+        width: 60%;
+        height: 70vh;
+        border-radius: 20px;
+        display: flex;
+        align-items: right;
+        margin-left: 100px;
+      }
+
+      //Reglage du texte dans le grid
+
+      .gridText {
+        width: 70%;
+        margin: 0 auto;
+        color: #b3b3b3;
+        font-family: "Poppins", sans-serif;
+        padding-top: 60px;
+
+        p {
+          padding-bottom: 20px;
+        }
+      }
+    }
+
+    //reprise du code du bouton des events
+
+    .eventButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 20px;
+      margin-bottom: 120px;
+
+      button {
+        padding: 15px;
+        border: 1px black solid;
+        background: white;
+        width: 20%;
+        text-transform: uppercase;
+        border-radius: 20px;
+
+        @media screen and (max-width: 600px) {
+          width: 33%;
+        }
+      }
+    }
+
+    //Style du titre au dessus de la photo
+
+    .team {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      color: #b3b3b3;
+      font-size: 1.5rem;
+      font-family: $font1;
+    }
+
+    //Reglages de l'image
+
+    .teamImage {
+      background: url(../img/EQUIPE.png) center/cover;
+      height: 70vh;
+      width: 80%;
+      border-radius: 20px;
+      margin: 0 auto;
+
+      //Reglages pour la version mobile
+
+      @media screen and (max-width: 600px) {
+        width: 90%;
+        height: 50vh;
+      }
+    }
+  }
+}

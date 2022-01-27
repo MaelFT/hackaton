@@ -6,10 +6,12 @@ let param2 = param.substring(2);
 let schedule = "";
 let theme = "";
 let img = "";
+let price = 39;
+let pa = 2;
 
+// Création de la page 
 const createPage = () => {
-    console.log(param1);
-    console.log(param2);
+    // Récupération de l'horaire
     switch (param1) {
         case "0":
             schedule = "18.00 - 19.00"
@@ -33,29 +35,31 @@ const createPage = () => {
             schedule = `<p id="h">SCHEDULE NOT FOUND</p>`
             break;
     }
+    // Récupération du theme et de l'image
     switch (param2) {
         case "0":
+            img = `<img id="img" src="./assets/img/room/CHUCKY2.png" alt="CHUCKY HORROR SHOW">`;
             theme = "CHUCKY HORROR SHOW";
-            url = `<img id="img" src="./assets/img/room/CHUCKY2.png" alt="CHUCKY">`;
             break;
         case "1":
-            url = `<img id="img" src="./assets/img/room/CHATEAU1.png" alt="CHATEAU">`;
+            img = `<img id="img" src="./assets/img/room/CHATEAU1.png" alt="LE CHATEAU AMBULANT">`;
             theme = "LE CHATEAU AMBULANT";
             break;
         case "2":
-            url = `<img id="img" src="./assets/img/room/SUB-BORDEAUX3.png" alt="SUB-BORDEAUX3">`;
+            img = `<img id="img" src="./assets/img/room/SUB-BORDEAUX3.png" alt="LES SOUTERRAINS DE BORDEAUX">`;
             theme = "LES SOUTERRAINS DE BORDEAUX";
             break;
         case "3":
-            url = `<img id="img" src="./assets/img/room/HACKATON.png" alt="HACKATON">`;
+            img = `<img id="img" src="./assets/img/room/HACKATON.png" alt="HACKATON">`;
             theme = "HACKATON";
             break;
         default:
-            url = `<p id="img">IMAGE NOT FOUND</p>`
+            img = `<p id="img">IMAGE NOT FOUND</p>`
             theme = `<p id="th">THEME NOT FOUND</p>`
             break;
     }
 
+    // Création de la structure HTML
     reservationParam.innerHTML = `
     <div>
         <h2>RÉSERVATION</h2>
@@ -67,31 +71,94 @@ const createPage = () => {
                 <p id="ch">Vous avez choisi</p>
                 <p></p>
                 <p id="h">${schedule}</p>
-                <p id="th">${theme}</p>
+                <p id="th"><strong>${theme}</strong></p>
                 <p id="pa">PARTICIPANTS</p>
                 <select name="number" id="paNumber">
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                    <option value="">6</option>
-                    <option value="">7</option>
-                    <option value="">8</option>
-                    <option value="">9</option>
-                    <option value="">10</option>
-                    <option value="">11</option>
-                    <option value="">12</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
                 </select>
                 <p id="pri">PRIX</p>
-                <p id="npri">39 €</p>
-                <input type="button" value="ANNULER" id="cbtn">
-                <input type="button" value="RESERVER" id="gbtn">
+                <p id="npri">${price}€</p>
+                <a href="./schedule.html">
+                    <input type="button" value="ANNULER" id="cbtn">
+                </a>
+                <div id="linkConfirm">
+                    <a href="./confirm.html?${param1},${param2},${price},${pa}">
+                        <input type="button" value="RESERVER" id="gbtn">
+                    </a>
+                </div>
             </div>
             <div>
-            ${url}
+            ${img}
             </div>
         </div>
     </div>
     `
 }
 createPage();
+
+// Sélection du nombre de participants et changement du prix en fonction du nombre de participants
+paNumber.addEventListener("click", (e) => {
+    switch (e.target.value) {
+        case "2":
+            price = 39;
+            pa = 2;
+            break;
+        case "3":
+            price = 51;
+            pa = 3;
+            break;
+        case "4":
+            price = 66;
+            pa = 4;
+            break;
+        case "5":
+            price = 81;
+            pa = 5;
+            break;
+        case "6":
+            price = 96;
+            pa = 6;
+            break;
+        case "7":
+            price = 111;
+            pa = 7;
+            break;
+        case "8":
+            price = 126;
+            pa = 8;
+            break;
+        case "9":
+            price = 141;
+            pa = 9;
+            break;
+        case "10":
+            price = 156;
+            pa = 10;
+            break;
+        case "11":
+            price = 171;
+            pa = 11;
+            break;
+        case "12":
+            price = 186;
+            pa = 12;
+            break;
+    }
+
+    // Changement de la structure HTML en fonction du nombre de participants sélectionnés
+    npri.innerHTML = `${price}€`
+    linkConfirm.innerHTML = `                    
+    <a href="./confirm.html?${param1},${param2},${price},${pa}">
+        <input type="button" value="RESERVER" id="gbtn">
+    </a>`
+})

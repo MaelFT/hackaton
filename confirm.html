@@ -1,12 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <meta name="description" content=""> TODO -->
+    <meta
+      name="description"
+      content="→ Réservez les salles uniques et immersives de THE ROOM 5 Bordeaux. Sélectionnez le nombre de participants et réservez dès aujourd'hui une expérience inédite"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/lib/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Panier - THE ROOM 5</title>
+    <title>RESERVER - THE ROOM 5 BORDEAUX</title>
   </head>
-  <body></body>
+  <body id="confirmBody">
+    <!-- NAVBAR -->
+
+    <header>
+      <!-- Création de la navbar avec li pour le référencement -->
+      <nav class="navBar" id="nav">
+        <div class="elements">
+          <ul>
+            <div class="navAll">
+            <div class="navLogo">
+            <a href="./index.html">
+              <img src="./assets/img/log.png" alt="LOGO THE ROOM 5">
+            </a>
+        </div>
+        <div class="navList">
+           <li><a href="./concept.html">Concept</a></li>
+           <li><a href="./room.html">Chambres</a></li>
+           <li><a href="./events.html">Evenements</a></li>
+           <li><a href="./contact.html">Contact</a></li>
+           <li><a href="./faq.html">Faq</a></li>
+           <li><a href="./schedule.html"><button class="reservBtn">Reserver</button></a></li>
+          </ul>
+        </div>
+      </nav>
+    <!-- Ajout des éléments pour le menu burger -->
+
+
+    <!-- Bouton clicable en haut de l'écran -->
+
+
+    <div id="sideBar">
+      <div class="toggleBtn" id="btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+     <!-- Eléments qui s'ajoutent lors du clic -->
+      
+      <div id="toggleBar">
+        <div class="outBtn">
+          <span></span>
+          <span></span>
+        </div>
+      <!-- Eléments du menu   -->
+      <ul>
+        <li><img src="./assets/img/LOGO.png" alt="LOGO THE ROOM 5"></li>
+        <li><a href="">Concept</a></li>
+        <li><a href="">Chambres</a></li>
+        <li><a href="">Evenements</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Faq</a></li>
+        <li><button class="liBtn">+ informations</button></li>
+      </ul>
+    </div>
+  </header>
+
+    <!-- SECTION -->
+    <section id="confirmParam"></section>
+
+    <!-- FOOTER -->
+
+        <!-- SECTION carte physique -->
+        <div id="physicCard" class="py-4">
+          <div class="container mb-4">
+            <div class="row d-flex justify-content-evenly">
+              <div class="col-md-5 col-lg-5 col-12 textGche">
+                <div class="justify-content-start d-flex inh">
+                  <ul class="inh">
+                    <li class="fs-2 my-4 inh"><i class="fa fa-map-marker inh"></i><strong class="inh"> Room 5 Escape Game
+                        Bordeaux</strong>
+                      <p class="fs-2 inh">72 Quai des Marques, 33300 BORDEAUX</p>
+                    </li>
+                    <li class="fs-2 my-4 inh"><i class="fa fa-car inh"></i><strong class="inh">En Voiture:</strong>
+                      <p class="fs-2 inh">Sortie rocade N°4 direction "Bordeaux Centre"
+                        (zone de Bordeaux Lac : En face Cap Sciences)
+                      </p>
+                    </li>
+                    <li class="fs-2 my-4 inh"><i class="fa fa-subway inh"></i><strong class="inh">En transport en
+                        commun:</strong>
+                      <p class="fs-2 inh">Tram B arrêt La cité du Vin puis 2 minutes de marche,
+                        ou Tram C arrêt Grand Parc puis 25 minutes de marche
+                      </p>
+                    </li>
+                    <li class="fs-2 my-4 inh">
+                      <p class="fs-2 inh">Grand parking gratuit pour votre venue en voiture !</p>
+                    </li>
+                  </ul>
+    
+                </div>
+              </div>
+              <div class="col-md-5 col-lg-5 col-12 card">
+                <div class="justify-content-center d-flex innerCard">
+                  <div class="justify-content-center d-flex divInnerCard">
+                    <iframe src="https://www.google.com/maps/d/embed?mid=1_4iMIRdwRH_nvqiNZ-Vtwn-XouRS8oG2&ehbc=2E312F"
+                      width="640" height="480"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- BOUTON RETOUR haut de page -->
+        <section id="return">
+          <div class="fleche text-center py-4">
+            <a class="" href="index.html" data-slide="up"><i class="bi bi-arrow-up-circle text-white"
+                style="font-size:60px;"></i></a>
+          </div>
+        </section>
+      </main>
+    
+      <!-- FOOTER -->
+      <footer class="bg-secondary">
+        <nav class='nav bg-secondary'>
+          <div class="container bg-secondary">
+            <div class="row d-flex justify-content-around bg-secondary">
+              <div class="col-md-6 col-lg-6 col-6 py-4 bg-secondary">
+                <div class="justify-content-start d-flex mb-4 bg-secondary">
+                  <img class="bg-secondary" src="assets/img/LOGO (2).png" alt="logo">
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-6 col-6 py-4 text-center bg-secondary">
+                <div class="justify-content-center d-flex bg-secondary">
+                  <ul class="ul1 bg-secondary">
+                    <li class="fs-1 py-1 text-center bg-secondary"><a href="index.html">FAQ</a></li>
+                    <li class="fs-1 py-1 text-center bg-secondary"><a href="tarif.html">EVENEMENTS</a></li>
+                    <li class="fs-1 pb-4 text-center bg-secondary"><a href="cgv.html">CGV-CGU</a></li>
+                    <li class="fs-1 pt-4 text-center bg-secondary"><a href="contact.html">CONTACT</a></li>
+                    <li class="fs-1 text-center bg-secondary">
+                      <div class="pictos bg-secondary">
+                        <ul class="social-icons bg-secondary">
+                          <li class="bg-secondary"><a href="" class="social-icon bg-secondary"><i
+                                class="fa fa-facebook fs-1 px-2 bg-secondary"></i></a></li>
+                          <li class="bg-secondary"><a href="" class="social-icon bg-secondary"><i
+                                class="fa fa-twitter fs-1 px-2 bg-secondary"></i></a></li>
+                          <li class="bg-secondary"><a href="" class="social-icon bg-secondary"><i
+                                class="fa fa-youtube fs-1 px-2 bg-secondary"></i></a></li>
+                          <li class="bg-secondary"><a href="" class="social-icon bg-secondary"><i
+                                class="fa fa-instagram fs-1 px-2 bg-secondary"></i></a></li>
+                          <li class="bg-secondary"><a href="" class="social-icon bg-secondary"><i
+                                class="fa fa-twitch fs-1 px-2 bg-secondary"></i></a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="bas text-center bg-secondary pb-2">
+                © 2022 <a href=""> Agence 5 - theroom5.fr Valentina BURGOS BRAVO - Diane MAXIMOVITCH - Maël FATH - Julien
+                  POIRIER - Etienne RIVET</a> - <a href="">Mentions légales</a>
+              </div>
+        </nav>
+      </footer>
+      <!-- SCRIPT -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+      <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+      <script src="assets/js/script.js"></script>
+      <script src="assets/js/index.js"></script>
+      <script src="./assets/js/navbar.js"></script>
+      <script src="./assets/js/confirm.js"></script>
+      <script
+        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+      <script src="assets/lib/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+  </body>
 </html>

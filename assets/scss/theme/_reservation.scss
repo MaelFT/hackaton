@@ -2,20 +2,25 @@
   background: $black;
 
   #reservationParam {
+    // Positionnement
     display: flex;
     flex-direction: column;
     margin: 200px auto;
     width: 80%;
+
     h2 {
       color: $white;
       font-size: 2rem;
       font-weight: 300;
       margin-bottom: 100px;
+      text-align: center;
     }
+
     .reserveDate {
       border-top: 1px solid $white;
       border-bottom: 1px solid $white;
       margin-bottom: 30px;
+
       p {
         color: $grey;
         margin: 10px 0;
@@ -23,36 +28,45 @@
       }
     }
     .reserveParam {
+      // Positionnement
       display: grid;
       grid-template-columns: 50% 50%;
       color: $grey;
 
       .reserveOption {
+        // Positionnement
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 20% 20% 20% 20% 20%;
         align-items: center;
+
         p {
           color: $grey;
         }
+
         #cbtn {
+          // Paramètres du bouton de retour
           border-radius: 10px;
-          padding: 10px 20px;
+          padding: 20px;
           height: 50%;
           width: 70%;
           background: $black;
           color: $white;
           border: 1px solid $white;
         }
+
         #gbtn {
+          // Paramètres du bouton de réservation
           border-radius: 10px;
-          padding: 10px 20px;
+          padding: 20px;
           height: 50%;
           width: 70%;
           background: $white;
           color: $black;
         }
+
         #paNumber {
+          // Paramètre du sélecteur de participants
           border-radius: 10px;
           height: 50%;
           width: 70%;
@@ -61,6 +75,39 @@
 
       #img {
         width: 100%;
+        // height: 300px;
+      }
+    }
+  }
+}
+
+// RESPONSIVE
+
+@media (max-width: 850px) {
+  .reserveBody {
+    #reservationParam {
+      .reserveParam {
+        display: flex;
+        flex-direction: column;
+
+        .reserveOption {
+          margin-bottom: 30px;
+          min-height: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .reserveBody {
+    #reservationParam {
+      .reserveParam {
+        .reserveOption {
+          p {
+            font-size: 0.8rem;
+          }
+        }
       }
     }
   }
