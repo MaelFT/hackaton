@@ -72,3 +72,20 @@ footer{
         }
     }
 }
+
+// media queries
+  
+   @media(max-width: 768px){
+        footer .ul1 {
+            list-style: none;
+            padding-top: 2rem;
+        }
+    }
+  
+  
+    @media(max-width: 450px){
+        footer .ul1 {
+            list-style: none;
+            padding-top: 0rem;
+        }
+    }

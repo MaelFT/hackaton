@@ -25,8 +25,8 @@
     color: black;
     background-color: white;
     border: 1px solid white;
-    border-radius: 10px;
-    padding:2rem 5rem ;
+    border-radius: 20px;
+    padding:2rem 7rem ;
     margin-bottom: 8rem;
   }
 }
@@ -62,8 +62,8 @@
       color: black;
       background-color: white;
       border: 1px solid white;
-      border-radius: 10px;
-      padding:2rem 5rem ;
+      border-radius: 20px;
+      padding:2rem 7rem ;
       margin-bottom: 8rem;
     }
   }
@@ -76,6 +76,7 @@
       border: 1px solid rgb(0, 0, 0);
       border-radius: 10%;
       background-color: white;
+
       .inh{
           background-color: inherit;
           border-radius: 10%;
@@ -108,7 +109,9 @@
       }
   }
 }
-
+#return{
+  display: none;
+}
 
 
 
@@ -126,25 +129,67 @@
  #physicCard1 .card {
    width: 100%;
  }
+ #return{
+  .fleche{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: white;
+    padding: auto;
+  }
+ }
 }
 @media only screen and (max-width: 451px){
-  #joinus .join{
-    width: 90%;
-    padding: 75px;
-    margin: 2rem 2rem;
-    .marge{
-    margin: auto -10rem;
-    padding-top: 0;
-    }
-    h2,p{
+  *, body {
+    padding: 0rem;
+    #joinus .join{
+      width: 90%;
+      padding: 75px;
+      margin: 2rem 2rem;
+      .marge{
+      margin: auto -10rem;
       padding-top: 0;
+      }
+      h2,p{
+        padding-top: 0;
+      }
+    }
+    #contact button {
+      color: black;
+      background-color: white;
+      border: 1px solid white;
+      border-radius: 10px;
+      padding: 2rem 6rem;
+      margin-bottom: 2rem;
+    }
+    #contact .marg{
+      margin: auto 0;
+      button, textarea {
+        color: black;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 10px;
+        padding: 1rem 8rem;
+        overflow: hidden;
+        max-width: 100%;
+      }
+    }
+    #physicCard1 .textGche{
+      margin-bottom: 1rem;
+    }
+    #physicCard1 .card {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0;
+    }
+    #return{
+      display: flex;
+      justify-content: center;
+      background-color: black;
+      margin: auto;
+      .fleche{
+        background-color: rgb(0, 0, 0);
+      }
     }
   }
-  #contact .marg{
-    margin: auto 0;
-  }
-  #physicCard1 .card {
-    width: 100%;
-  }
-
 }

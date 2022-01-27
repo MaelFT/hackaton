@@ -38,18 +38,44 @@
         }
     }
 }
+#return{
+  display: none;
+}
 // média queries
-@media only screen and (max-width: 959px){
+@media only screen and (max-width: 959px){}
+@media screen and (max-width: 768px) {
+ #physicCard .card {
+   width: 100%;
+ }
+ #return{
+  .fleche{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: white;
+    padding: auto;
   }
-  @media screen and (max-width: 768px) {
-   #physicCard .card {
-     width: 100%;
-   }
-  }
-  @media only screen and (max-width: 451px){
+ }
+}
+@media only screen and (max-width: 451px){
+  *, body {
+    padding: 0rem;
+    #physicCard .textGche{
+      margin-bottom: 1rem;
+    }
     #physicCard .card {
       width: 100%;
+      margin-top: 1rem;
+      padding: 0;
     }
-  
+    #return{
+      display: flex;
+      justify-content: center;
+      background-color: black;
+      margin: auto;
+      .fleche{
+        background-color: rgb(0, 0, 0);
+      }
+    }
   }
-  
+}
