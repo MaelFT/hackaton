@@ -1,76 +1,155 @@
-.faqHeader {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  h2, h4 {
-    margin: 50px 0;
+.faqBody {
+  background: $black;
+
+  .faqHeader {
+    // Centrage du header
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $grey;
+
+    h2 {
+      // Paramètres du h2 dans le header
+      margin: 350px 0 50px;
+      font-size: 2rem;
+      font-weight: 300;
+    }
   }
-}
 
-.icons {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100%;
-  text-align: center;
-}
-
-.icon img {
-  padding: 50px 40px;
-  border: 1px solid black;
-}
-
-
-.accordionContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  h2 {
-    margin: 50px 0 20px;
+  .icons {
+    // Positionnement des icons
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    text-align: center;
   }
-}
 
-.accordion {
-  width: 800px;
+  .icon {
+    // Paramètres des icons
+    width: 19%;
 
-  .contentBx {
-    position: relative;
-    margin: 10px 20px;
-    .label {
+    p {
+      margin-top: 40px;
+      color: $grey;
+      line-height: 30px;
+    }
+
+    img {
+      height: 200px;
+
+      &:hover {
+        // Animation des icons au survol du curseur
+        cursor: pointer;
+        opacity: 50%;
+      }
+    }
+  }
+
+  // Accordion design
+
+  .accordionContainer {
+    // Centrage des accordions
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      // Paramètres du h2 dans le container des accordions
+      margin: 100px 0 50px;
+      color: $white;
+      font-size: 2rem;
+      font-weight: 300;
+    }
+  }
+  .accordion {
+    width: 60%;
+
+    // Accordion fermer
+    .contentBx {
       position: relative;
-      padding: 10px;
-      border: 1px solid black;
-      cursor: pointer;
+      margin: 10px 20px 5px;
+      background: $white;
+      border-radius: 5px;
+      padding: 10px 0;
 
-      &::before {
-        content: "+";
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-        font-size: 1.5rem;
+      p {
+        padding-left: 20px;
+      }
 
+      .label {
+        position: relative;
+        padding: 10px;
+        cursor: pointer;
+
+        &::before {
+          content: "+";
+          position: absolute;
+          top: 50%;
+          right: 20px;
+          transform: translateY(-50%);
+          font-size: 1.5rem;
+        }
+      }
+
+      .content {
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          height: 1px;
+          background: $grey;
+          width: 95%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
       }
     }
 
-    .content {
-      position: relative;
-      border: 1px solid black;
-      height: 0;
-      overflow: hidden;
-      transition: 0.5s;
+    // Accordion ouvert
+    .contentBx.active {
+      .label::before {
+        content: "-";
+      }
+
+      .content {
+        height: 150px;
+        padding: 10px;
+      }
     }
   }
-  .contentBx.active {
-    .label::before {
-      content: "-";
+}
+
+// RESPONSIVE
+
+@media (max-width: 1000px) {
+  .faqBody {
+    .icons {
+      flex-direction: column;
     }
-    .content {
-      height: 150px;
-      padding: 10px;
-      
+
+    .icon {
+      width: auto;
+
+      p {
+        margin: 0 30px;
+      }
+    }
+    .accordion {
+      width: 80%;
+
+      .label {
+        p {
+          padding-right: 30px;
+        }
+      }
     }
   }
 }

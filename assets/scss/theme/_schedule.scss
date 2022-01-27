@@ -1,0 +1,145 @@
+.scheduleBody {
+  background: $black;
+  .scheduleHeader {
+    margin-top: 300px;
+    h2 {
+      color: $white;
+      font-weight: 300;
+    }
+    .nextDay {
+      width: 80%;
+      margin: 80px auto 50px;
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid $white;
+      border-bottom: 1px solid $white;
+
+      p {
+        color: $grey;
+        margin: 10px 0;
+        line-height: 30px;
+        font-weight: 300;
+      }
+
+      input[type="button"] {
+        color: $white;
+        background: $pink;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: 10px 0;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      div {
+        display: flex;
+      }
+
+      section {
+        display: none;
+        background: $pink;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 5px;
+      }
+    }
+  }
+
+  .schedule {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    align-items: center;
+    border-bottom: 1px solid $white;
+
+    p {
+      color: $grey;
+      font-weight: 300;
+    }
+
+    div {
+      display: flex;
+      justify-content: end;
+      img {
+        display: none;
+      }
+      input[type="button"] {
+        width: 150px;
+        color: $black;
+        background: $white;
+        border-radius: 10px;
+        padding: 10px 20px;
+        margin: 5px 0;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .question {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      color: $white;
+    }
+
+    input[type="button"] {
+      color: $black;
+      background: $white;
+      border-radius: 10px;
+      padding: 20px 40px;
+      margin: 50px 0;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .scheduleBody {
+    .scheduleHeader {
+      .nextDay {
+        width: 90%;
+        border-top: 0px transparent;
+        border-bottom: 0px transparent;
+
+        section {
+          display: flex;
+        }
+
+        input[type="button"] {
+          display: none;
+        }
+      }
+    }
+    .schedule {
+      width: 90%;
+      p {
+        font-size: 0.8rem;
+      }
+      div {
+        img {
+          display: flex;
+        }
+        input[type="button"] {
+          display: none;
+        }
+      }
+      &:first-child {
+        border-top: 1px solid $white;
+      }
+    }
+    .question {
+      input[type="button"] {
+        padding: 30px 60px;
+      }
+    }
+  }
+}

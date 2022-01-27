@@ -1,0 +1,67 @@
+.reserveBody {
+  background: $black;
+
+  #reservationParam {
+    display: flex;
+    flex-direction: column;
+    margin: 200px auto;
+    width: 80%;
+    h2 {
+      color: $white;
+      font-size: 2rem;
+      font-weight: 300;
+      margin-bottom: 100px;
+    }
+    .reserveDate {
+      border-top: 1px solid $white;
+      border-bottom: 1px solid $white;
+      margin-bottom: 30px;
+      p {
+        color: $grey;
+        margin: 10px 0;
+        font-weight: 300;
+      }
+    }
+    .reserveParam {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      color: $grey;
+
+      .reserveOption {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        align-items: center;
+        p {
+          color: $grey;
+        }
+        #cbtn {
+          border-radius: 10px;
+          padding: 10px 20px;
+          height: 50%;
+          width: 70%;
+          background: $black;
+          color: $white;
+          border: 1px solid $white;
+        }
+        #gbtn {
+          border-radius: 10px;
+          padding: 10px 20px;
+          height: 50%;
+          width: 70%;
+          background: $white;
+          color: $black;
+        }
+        #paNumber {
+          border-radius: 10px;
+          height: 50%;
+          width: 70%;
+        }
+      }
+
+      #img {
+        width: 100%;
+      }
+    }
+  }
+}
