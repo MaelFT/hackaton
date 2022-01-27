@@ -1,5 +1,6 @@
 /*CUSTOMISATION FOOTER*/
 footer{
+    height: 40vh;
     background-color: grey;
     img{
         width: 100%;
@@ -79,6 +80,10 @@ footer{
         footer .ul1 {
             list-style: none;
             padding-top: 2rem;
+            .social-icons{
+                display: flex;
+                flex-direction: row;
+            }
         }
     }
   
