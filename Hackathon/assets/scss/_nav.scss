@@ -1,0 +1,226 @@
+//réglages généraux de la navbar
+.navBar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 30;
+    transition: ease-out 1.5s;
+
+    @media screen and (max-width : 620px) {
+        display: none;
+    }
+
+    //Alignement des éléments de la navbar
+
+    .navAll {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navLogo {
+        display: flex;
+        width: 30%;
+    }
+
+    .navList {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 62%;
+        margin-top: 10px;
+
+        @media screen and (max-width:1100px) {
+            width: 100%;
+        }
+
+        li:last-child {
+            margin-right: 20px;
+        }
+    }
+
+    ul {
+        text-transform: uppercase;
+        font-size: 1rem;
+        width: 100%;
+        background: #000;
+        padding: 10px;
+
+
+    }
+
+    //Style des éléments de la navbar
+
+    a {
+        text-decoration: none;
+        color: #B3B3B3;
+        font-family: 'Poppins', sans-serif;
+
+        @media screen and (max-width:1100px) {
+            font-size: 1rem;
+        }
+
+        &:hover {
+            color: #A63C90;
+        }
+    }
+
+    button {
+        background: #7C2968;
+        padding: 15px 20px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        color: white;
+    }
+
+
+    //Taille des éléments de la navbar
+
+    li {
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+//positionnement du menu burger
+
+#sideBar {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    top: 0;
+    right: -730px;
+    transition: 0.5s ease-out;
+    z-index: 4;
+
+    //Pour l'afficher qu'en mobile
+
+    @media screen and (min-width:620px) {
+        display: none;
+    }
+}
+
+//Positionnement de l'icône pour ouvrir le menu 
+
+.toggleBtn {
+    position: absolute;
+    top: 30px;
+    right: 740px;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+}
+
+//Création des barres pour l'icône 
+
+.toggleBtn span {
+    width: 60px;
+    height: 7px;
+    border-radius: 5px;
+    background: #b3b3b3;
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    transition: 0.3s ease;
+}
+
+//Positionnement des éléments du menu 
+
+ul {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+//Style des éléments du menu
+
+li {
+    color: $black;
+    list-style: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-bottom: 20px;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #b3b3b3;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.liBtn {
+    background: $violet;
+    color: $white;
+    padding: 20px;
+    font-family: $basicFont, sans-serif;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+//Positionnement pour le toggle
+
+#sideBar.active {
+    right: 0;
+}
+
+#sideBar.active span {
+    position: absolute;
+}
+
+
+//Création du bouton pour fermer le menu 
+
+.outBtn {
+    position: absolute;
+    margin-top: 70px;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    z-index: 50;
+}
+
+//Création de la forme du bouton, en croix
+
+.outBtn span:nth-child(1) {
+    transform: rotate(45deg);
+    width: 40px;
+    height: 3px;
+    border-radius: 5px;
+    background: #b3b3b3;
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    transition: 0.3s ease;
+}
+
+.outBtn span:nth-child(2) {
+    transform: rotate(-45deg);
+    width: 40px;
+    height: 3px;
+    border-radius: 5px;
+    background: #b3b3b3;
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    transition: 0.3s ease;
+}
+
+.outBtn:hover {
+    cursor: pointer;
+}

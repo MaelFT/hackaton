@@ -1,0 +1,775 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  list-style-type: none;
+  margin: 0;
+  border: 0;
+}
+
+.navBar {
+  position: fixed;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 30;
+  -webkit-transition: ease-out 1.5s;
+  transition: ease-out 1.5s;
+}
+
+@media screen and (max-width: 620px) {
+  .navBar {
+    display: none;
+  }
+}
+
+.navBar .navAll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.navBar .navLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+}
+
+.navBar .navList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  width: 62%;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .navBar .navList {
+    width: 100%;
+  }
+}
+
+.navBar .navList li:last-child {
+  margin-right: 20px;
+}
+
+.navBar ul {
+  text-transform: uppercase;
+  font-size: 1rem;
+  width: 100%;
+  background: #000;
+  padding: 10px;
+}
+
+.navBar a {
+  text-decoration: none;
+  color: #B3B3B3;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 1100px) {
+  .navBar a {
+    font-size: 1rem;
+  }
+}
+
+.navBar a:hover {
+  color: #A63C90;
+}
+
+.navBar button {
+  background: #7C2968;
+  padding: 15px 20px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.navBar li {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#sideBar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  top: 0;
+  right: -730px;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  z-index: 4;
+}
+
+@media screen and (min-width: 620px) {
+  #sideBar {
+    display: none;
+  }
+}
+
+.toggleBtn {
+  position: absolute;
+  top: 30px;
+  right: 740px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+
+.toggleBtn span {
+  width: 60px;
+  height: 7px;
+  border-radius: 5px;
+  background: #b3b3b3;
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+ul {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+li {
+  color: black;
+  list-style: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  padding-left: 5px;
+  padding-bottom: 20px;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #b3b3b3;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+}
+
+.liBtn {
+  background: #742663;
+  color: #b3b3b3;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+
+#sideBar.active {
+  right: 0;
+}
+
+#sideBar.active span {
+  position: absolute;
+}
+
+.outBtn {
+  position: absolute;
+  margin-top: 70px;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 50px;
+  z-index: 50;
+}
+
+.outBtn span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  width: 40px;
+  height: 3px;
+  border-radius: 5px;
+  background: #b3b3b3;
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.outBtn span:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 40px;
+  height: 3px;
+  border-radius: 5px;
+  background: #b3b3b3;
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.outBtn:hover {
+  cursor: pointer;
+}
+
+.header .topImg {
+  background: url(../img/fontaccueil.png) center/cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.header .topImg h2 {
+  color: #b3b3b3;
+  position: absolute;
+  text-align: left;
+  padding-top: 200px;
+}
+
+@media screen and (min-width: 452px) {
+  .header .topImg h2 {
+    display: none;
+  }
+}
+
+.header .topBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 600px;
+}
+
+.header .topBtn .tBtn {
+  border: 1px solid black;
+  background: white;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  width: 30%;
+}
+
+@media screen and (max-width: 400px) {
+  .header .topBtn .tBtn {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header .topBtn .tBtn {
+    width: 40%;
+  }
+}
+
+section .gridTitle {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section .gridPrice {
+  width: 70%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 auto;
+}
+
+section .gridPrice .gridElement {
+  border-left: 1px black solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px 20px;
+  background: white;
+}
+
+section .gridPrice .gridElement:first-child {
+  border-radius: 20px 0 0 20px;
+}
+
+section .gridPrice .gridElement:last-child {
+  border-radius: 0 20px 20px 0;
+}
+
+section .gridPrice .gridElement .nbJoueur {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+section .gridPrice .gridElement .prix {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+section .gridPrice .gridElement .person {
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+.header .topImg {
+  background: url(../img/fontaccueil.png) center/cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.header .topImg h2 {
+  color: #b3b3b3;
+  position: absolute;
+  text-align: left;
+  padding-top: 200px;
+}
+
+@media screen and (min-width: 452px) {
+  .header .topImg h2 {
+    display: none;
+  }
+}
+
+.header .topBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 600px;
+}
+
+.header .topBtn .tBtn {
+  border: 1px solid black;
+  background: white;
+  padding: 20px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  width: 30%;
+}
+
+@media screen and (max-width: 400px) {
+  .header .topBtn .tBtn {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header .topBtn .tBtn {
+    width: 40%;
+  }
+}
+
+.cgv {
+  overflow: hidden;
+  background: black;
+  color: #b5b5b5;
+}
+
+@media screen and (max-width: 600px) {
+  .cgv {
+    margin: 0 auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    width: 70%;
+  }
+}
+
+.cgv .cgvEnter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cgv .cgvEnter h2 {
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+}
+
+.cgv .cgvEnter h3 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.cgv .cgvEnter p {
+  padding-bottom: 3px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cgv .cgvEnter .padTop {
+  padding-top: 10px;
+}
+
+.cgv .chartContent {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.cgv .chartContent h2 {
+  text-transform: uppercase;
+}
+
+.events {
+  background: #000;
+  overflow: hidden;
+}
+
+.events .eventsHeader {
+  background: url(../img/HEADEREVENEMENTS.png) center/cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.events .eventsContainer {
+  padding-top: 100px;
+  margin-left: 30px;
+  color: white;
+  width: 50%;
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .events .eventsContainer {
+    width: 90%;
+  }
+}
+
+.events .eventsTitle {
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.events .padBot {
+  padding-bottom: 10px;
+}
+
+.events .titleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+
+.events .titleDate {
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.events .eventImage {
+  background: url(../img/EVENEMENT-1.png) center/cover;
+  height: 70vh;
+  width: 70%;
+  margin: 0 auto 30px auto;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .events .eventImage {
+    width: 80%;
+    height: 50vh;
+  }
+}
+
+.events .eventsText {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  width: 70%;
+}
+
+.events .eventsText p {
+  padding-bottom: 15px;
+}
+
+.events .eventButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 120px;
+}
+
+.events .eventButton .eButton {
+  padding: 15px;
+  border: 1px black solid;
+  background: white;
+  width: 33%;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .events .eventButton .eButton {
+    padding: 25px;
+  }
+}
+
+.events .eventImageTwo {
+  background: url(../img/EVENEMENT-2.png) center/cover;
+  height: 70vh;
+  width: 70%;
+  margin: 0 auto 30px auto;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .events .eventImageTwo {
+    width: 80%;
+    height: 50vh;
+    border-radius: 30px;
+  }
+}
+
+.concept {
+  background: black;
+  overflow: hidden;
+}
+
+.concept .storyHeader {
+  background: url(../img/HEADER-NOSCONCEPT.png) center/cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.concept .storyHeader .storyContainer {
+  padding-top: 300px;
+  margin-left: 30px;
+  color: white;
+  width: 40%;
+  font-family: "Poppins";
+}
+
+.concept .storyHeader .storyContainer h2 {
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  font-size: 2rem;
+}
+
+.concept .storyTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+  text-transform: uppercase;
+  color: #b3b3b3;
+}
+
+.concept .gridStory {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .concept .gridStory {
+    display: block;
+  }
+}
+
+.concept .gridStory .gridImage {
+  background: url(../img/HISTOIRE.png) center/cover;
+  width: 60%;
+  height: 70vh;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  margin-left: 100px;
+}
+
+.concept .gridStory .gridText {
+  width: 70%;
+  margin: 0 auto;
+  color: #b3b3b3;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 60px;
+}
+
+.concept .gridStory .gridText p {
+  padding-bottom: 20px;
+}
+
+.concept .eventButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 20px;
+  margin-bottom: 120px;
+}
+
+.concept .eventButton button {
+  padding: 15px;
+  border: 1px black solid;
+  background: white;
+  width: 20%;
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .concept .eventButton button {
+    width: 33%;
+  }
+}
+
+.concept .team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #b3b3b3;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.concept .teamImage {
+  background: url(../img/EQUIPE.png) center/cover;
+  height: 70vh;
+  width: 80%;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .concept .teamImage {
+    width: 90%;
+    height: 50vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */

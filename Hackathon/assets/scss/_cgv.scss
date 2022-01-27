@@ -1,0 +1,61 @@
+@import "./header";
+
+.cgv {
+
+    overflow: hidden;
+    background: $black;
+    color: #b5b5b5;
+
+    //Alignement de toute la page pour la version mobile
+
+    @media screen and (max-width : 600px) {
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 70%;
+    }
+
+    //Alignement du haut de la page version desktop
+
+    .cgvEnter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        //Style des éléments
+
+        h2 {
+            padding-bottom: 30px;
+            text-transform: uppercase;
+            font-size: 1.3rem;
+        }
+
+        h3 {
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+
+        p {
+            padding-bottom: 3px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .padTop {
+            padding-top: 10px;
+        }
+    }
+
+    //Alignement du contenu de la charte
+
+    .chartContent {
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 20px;
+
+        h2 {
+            text-transform: uppercase;
+        }
+    }
+}
