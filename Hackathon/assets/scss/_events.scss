@@ -1,7 +1,8 @@
 .events {
     background: #000;
     overflow: hidden;
-    font-family: 'Poppins';
+
+    //Ajout de l'image du header
 
     .eventsHeader {
         background: url(../img/HEADEREVENEMENTS.png) center/cover;
@@ -15,18 +16,22 @@
         margin-left: 30px;
         color: rgb(255, 255, 255);
         width: 50%;
-        font-family: 'Poppins', sans-serif;
+        font-family: $basicFont, sans-serif;
+
+        //Ajustement pour la version mobile 
 
         @media screen and (max-width: 600px) {
             width: 90%;
         }
     }
 
+    //Style du titre du header 
+
     .eventsTitle {
         padding-bottom: 10px;
         text-transform: uppercase;
         font-size: 1.5rem;
-        font-family: 'Poppins';
+        font-family: $basicFont, sans-serif;
 
     }
 
@@ -43,7 +48,9 @@
         text-transform: uppercase;
         font-size: 1.5rem;
         color: white;
-        font-family: 'Poppins', sans-serif;
+        font-family: $basicFont, sans-serif;
+        padding-bottom: 10px;
+        margin-top: 20px;
     }
 
     .titleDate {

@@ -4,17 +4,17 @@ window.addEventListener("scroll", () => {
   if (window.scrollY < 200) {
     nav.style.top = "0";
   } else {
-    nav.style.top = "-600px";
+    nav.style.top = "-1600px";
   }
 });
 
-const sideBar = document.querySelector("#side-bar");
-const content = document.querySelector(".content");
+const sideBar = document.querySelector("#sideBar");
+const closeBtn = document.querySelector(".outBtn");
 
 btn.addEventListener("click", () => {
   sideBar.classList.toggle("active");
 });
 
-content.addEventListener("click", () => {
+closeBtn.addEventListener("click", () => {
   sideBar.classList.remove("active");
 });

@@ -1,9 +1,12 @@
 @import "./header";
 
 .cgv {
+
     overflow: hidden;
     background: $black;
     color: #b5b5b5;
+
+    //Alignement de toute la page pour la version mobile
 
     @media screen and (max-width : 600px) {
         margin: 0 auto;
@@ -13,13 +16,15 @@
         width: 70%;
     }
 
+    //Alignement du haut de la page version desktop
+
     .cgvEnter {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
 
-
+        //Style des éléments
 
         h2 {
             padding-bottom: 30px;
@@ -41,6 +46,8 @@
             padding-top: 10px;
         }
     }
+
+    //Alignement du contenu de la charte
 
     .chartContent {
         width: 70%;

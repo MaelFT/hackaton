@@ -29,9 +29,13 @@ section {
             padding: 50px 20px;
             background: white;
 
+            //Style de la case de droite    
+
             &:first-child {
                 border-radius: 20px 0 0 20px;
             }
+
+            //Style de la case de gauche     
 
             &:last-child {
                 border-radius: 0 20px 20px 0;

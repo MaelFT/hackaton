@@ -56,6 +56,8 @@
 
         }
 
+        //Reglage du texte dans le grid 
+
         .gridText {
             width: 70%;
             margin: 0 auto;
@@ -92,6 +94,8 @@
         }
     }
 
+    //Style du titre au dessus de la photo
+
     .team {
         display: flex;
         align-items: center;
@@ -100,7 +104,10 @@
         text-transform: uppercase;
         color: #b3b3b3;
         font-size: 1.5rem;
+        font-family: $basicFont, sans-serif;
     }
+
+    //Reglages de l'image 
 
     .teamImage {
         background: url(../img/EQUIPE.png) center/cover;
@@ -108,6 +115,8 @@
         width: 80%;
         border-radius: 20px;
         margin: 0 auto;
+
+        //Reglages pour la version mobile    
 
         @media screen and (max-width : 600px) {
             width: 90%;
