@@ -1,0 +1,74 @@
+section {
+
+    //création de la boîte
+    .eventsContainer {
+        border: 1px black solid;
+        padding: 30px;
+        width: 30%;
+        margin-left: 30px;
+        background: rgba(255,255,255,0.5);
+    }
+
+    .eventsTitle {
+        padding-bottom: 10px;
+    }
+
+    //Alignement des items dans la boîte
+    .titleContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+    }
+
+
+
+    .eventImage {
+        background: url(./Beaurdeaux.jpg) center/cover;
+        height: 50vh;
+        width: 50%;
+        transform: translateX(50%);
+        margin-bottom: 30px;
+    }
+
+    //Reglage de la zone de texte
+
+    .eventArea {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 55%;
+        border: 1px black solid;
+        resize: none;
+    }
+
+//Réglage des boutons
+
+    .eventButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 120px;
+
+        button {
+            padding: 15px;
+            border: 1px black solid;
+            background: white;
+            width: 15%;
+        }
+    }
+    
+//Réglage de la deuxième image 
+
+    .eventImageTwo {
+        background: url(./pont.jpg) center/cover;
+        height: 50vh;
+        width: 50%;
+        transform: translateX(50%);
+        margin-bottom: 30px;
+    }
+}
